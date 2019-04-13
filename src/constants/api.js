@@ -1,5 +1,5 @@
-export const host= HOST
-export const hostM = HOST_M
+//export const host= HOST
+//export const hostM = HOST_M
 
 /**eslint-enable */
 
