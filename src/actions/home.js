@@ -1,8 +1,10 @@
 import {
-    HOME_INFO
+    HOME_INFO,
+    HOME_SEARCH_COUNT
 }  from '@constants/home'
 import {
-    API_HOME
+    API_HOME,
+    API_HOME_SEARCH_COUNT
 } from '@constants/api'
 
 import {createAction } from '@utils/redux'
@@ -14,6 +16,12 @@ import {createAction } from '@utils/redux'
 
  export const dispatchHome = payload => createAction({
      url: API_HOME,
-     type: HOMT_INFO,
+     type: HOME_INFO,
+     payload
+ })
+
+ export const dispatchSearchCount = payload => createAction({
+     url: API_HOME_SEARCH_COUNT,
+     type: HOME_SEARCH_COUNT,
      payload
  })
